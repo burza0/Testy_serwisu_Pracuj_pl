@@ -1,0 +1,14 @@
+{
+  "name": "testy-automatyczne-ceypress-pracuj_pl",
+  "version": "1.0.0",
+  "description": "Testy automatyczne wybranych funkcjonalności serwisu pracuj.pl",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mariusz Burzyński",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.3.1"
+  }
+}
