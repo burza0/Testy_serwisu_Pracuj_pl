@@ -1,0 +1,483 @@
+{
+  "id": "61584c2d-0901-4c05-85bb-710b39e70959",
+  "version": "2.0",
+  "name": "Pracuj.pl",
+  "url": "https://www.pracuj.pl/",
+  "tests": [{
+    "id": "6e95d932-1ce2-4b3f-bb45-9e4d98f23719",
+    "name": "Weryfikacja stopki",
+    "commands": [{
+      "id": "664242a8-3543-458d-bc14-15a042ae1e0d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "138db07e-78ed-48f3-9b86-28658f11b956",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.s11ypfk9:nth-child(1) > .i1qb7w35",
+      "targets": [
+        ["css=.s11ypfk9:nth-child(1) > .i1qb7w35", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ac09b3f-30db-4256-8e67-423e9ed213d4",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.s11ypfk9:nth-child(2) > .i1qb7w35",
+      "targets": [
+        ["css=.s11ypfk9:nth-child(2) > .i1qb7w35", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d53c5211-d0b4-4101-833f-0c44321aa931",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.s11ypfk9:nth-child(3) path",
+      "targets": [
+        ["css=.s11ypfk9:nth-child(3) path", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dca4485a-5d6c-458f-9982-3361a2629bae",
+    "name": "Logowanie i wylogowanie (pozytywnie)",
+    "commands": [{
+      "id": "11b39340-c72d-464e-a918-c99ef22c44cb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0214a7ee-9a49-420e-a328-0d5585b85ad9",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Praca - Pracuj.pl",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8fd0a88-73fc-4f84-a3b7-1a604d6e1a99",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Zaloguj się",
+      "targets": [
+        ["linkText=Zaloguj się", "linkText"],
+        ["css=.d1na9uun .a1aer5im", "css:finder"],
+        ["xpath=(//a[contains(text(),'Zaloguj się')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://login.pracuj.pl/')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54dc56b4-f217-4841-918d-256ee0ca79aa",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.hLpPa",
+      "targets": [
+        ["css=.hLpPa", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div[2]/form/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Zaloguj się')]", "xpath:innerText"]
+      ],
+      "value": "Zaloguj się"
+    }, {
+      "id": "8c9b220b-1705-40f9-8f13-7f059fb2728f",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"input-email\"]",
+      "targets": [
+        ["css=*[data-test=\"input-email\"]", "css:data-attr"],
+        ["css=.\\_2ZSlh > .egkVq", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d137dc8b-6032-4e9f-9e5d-90e7953a8555",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"input-email\"]",
+      "targets": [
+        ["css=*[data-test=\"input-email\"]", "css:data-attr"],
+        ["css=.\\_2ZSlh > .egkVq", "css:finder"],
+        ["xpath=//input[@value='burza0@wp.pl']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "burza0@wp.pl"
+    }, {
+      "id": "b5cf28e9-efa2-4cbf-8d9d-d64b585d1bef",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"input-password\"]",
+      "targets": [
+        ["css=*[data-test=\"input-password\"]", "css:data-attr"],
+        ["css=.\\_3KOiA > .egkVq", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d0e375c-1073-4cb4-acd8-f612884ebee8",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"input-password\"]",
+      "targets": [
+        ["css=*[data-test=\"input-password\"]", "css:data-attr"],
+        ["css=.\\_3KOiA > .egkVq", "css:finder"],
+        ["xpath=//input[@value='qwertyuiop']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "qwertyuiop"
+    }, {
+      "id": "6017c64f-5e00-4733-86eb-2da5b9a1ed0d",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"button-login\"]",
+      "targets": [
+        ["css=*[data-test=\"button-login\"]", "css:data-attr"],
+        ["css=.\\_19V_Q", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div[2]/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Zaloguj się')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bb9c92d-a5ae-4da7-8067-2a2cef0e5537",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.title > span:nth-child(1)",
+      "targets": [
+        ["css=.title > span:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='offers']/gpnm-recommendations/div/h1/span", "xpath:idRelative"],
+        ["xpath=//h1/span", "xpath:position"]
+      ],
+      "value": "Rekomendowane oferty"
+    }, {
+      "id": "59eb2d25-9937-4251-8624-111b20b0e561",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bzmqa02 > .idqfg35:nth-child(1)",
+      "targets": [
+        ["css=.bzmqa02 > .idqfg35:nth-child(1)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c43cea81-4251-4995-8cc6-c5cd4a2bde33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mzg1u26:nth-child(4) .i11jj367:nth-child(9) span",
+      "targets": [
+        ["css=.mzg1u26:nth-child(4) .i11jj367:nth-child(9) span", "css:finder"],
+        ["xpath=//div[@id='pracuj_header']/header/div[2]/div[3]/div/menu/ul/li[9]/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/menu/ul/li[9]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "803463ea-8fd6-4f05-b5d8-695edbc9dc61",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.login__title",
+      "targets": [
+        ["css=.login__title", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Dziękujemy, że byłeś z nami!')]", "xpath:innerText"]
+      ],
+      "value": "Dziękujemy, że byłeś z nami!"
+    }]
+  }, {
+    "id": "865ea44f-bfd2-4685-b537-a95847d98a39",
+    "name": "Wyszukiwarka pracuj.pl / zalogowany",
+    "commands": [{
+      "id": "a66374d5-e07b-42d7-9c1e-437c84e1d653",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.pracuj.pl/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e8db155-eab7-4e47-844a-9af71ed15ae4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "864x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cede281f-c58e-4adb-aa1b-33f6ec98c735",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Praca - Pracuj.pl",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ce293f9-055e-44d4-86f8-b28267417980",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Zaloguj się",
+      "targets": [
+        ["linkText=Zaloguj się", "linkText"],
+        ["css=.d1na9uun .a1aer5im", "css:finder"],
+        ["xpath=(//a[contains(text(),'Zaloguj się')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://login.pracuj.pl/')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0ec29be-2cc2-4e39-aa99-07ee2cf80d26",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.hLpPa",
+      "targets": [
+        ["css=.hLpPa", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div[2]/form/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Zaloguj się')]", "xpath:innerText"]
+      ],
+      "value": "Zaloguj się"
+    }, {
+      "id": "015aa307-3257-4a4e-b064-56a25d940828",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"input-email\"]",
+      "targets": [
+        ["css=*[data-test=\"input-email\"]", "css:data-attr"],
+        ["css=.\\_2ZSlh > .egkVq", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf87d847-4589-48f1-a78f-e4bb0c060aeb",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"input-email\"]",
+      "targets": [
+        ["css=*[data-test=\"input-email\"]", "css:data-attr"],
+        ["css=.\\_2ZSlh > .egkVq", "css:finder"],
+        ["xpath=//input[@value='burza0@wp.pl']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div[2]/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "burza0@wp.pl"
+    }, {
+      "id": "3a845aa6-f551-4045-a991-3f0763624000",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"input-password\"]",
+      "targets": [
+        ["css=*[data-test=\"input-password\"]", "css:data-attr"],
+        ["css=.\\_3KOiA > .egkVq", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e6f5ded-65dd-484e-929d-a50ce3e1235a",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"input-password\"]",
+      "targets": [
+        ["css=*[data-test=\"input-password\"]", "css:data-attr"],
+        ["css=.\\_3KOiA > .egkVq", "css:finder"],
+        ["xpath=//input[@value='qwertyuiop']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div[2]/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "qwertyuiop"
+    }, {
+      "id": "79433626-938f-45ab-8cf9-afcc6e162ba3",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"button-login\"]",
+      "targets": [
+        ["css=*[data-test=\"button-login\"]", "css:data-attr"],
+        ["css=.\\_19V_Q", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div[2]/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Zaloguj się')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b57d55b-b93d-4f78-9650-3fadd35bb171",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.title > span:nth-child(1)",
+      "targets": [
+        ["css=.title > span:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='offers']/gpnm-recommendations/div/h1/span", "xpath:idRelative"],
+        ["xpath=//h1/span", "xpath:position"]
+      ],
+      "value": "Rekomendowane oferty"
+    }, {
+      "id": "3579e88a-bbd4-4668-b404-b5432176ad23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iedi3df:nth-child(1) span",
+      "targets": [
+        ["css=.iedi3df:nth-child(1) span", "css:finder"],
+        ["xpath=//div[@id='pracuj_header']/header/div[2]/div/menu/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/menu/ul/li/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Oferty pracy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1542ee56-3bbc-46bb-8c0a-6138adc5fb38",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Oferty pracy – Pracuj.pl",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c64a7ca-1597-49c8-a9f9-c6c80f9b4fa8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-form__keyword .autocomplete-item__field",
+      "targets": [
+        ["css=.search-form__keyword .autocomplete-item__field", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='search-form']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f237202b-e332-479a-8af5-b69ff7b97f60",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.autocomplete-item--filled .autocomplete-item__field",
+      "targets": [
+        ["css=.autocomplete-item--filled .autocomplete-item__field", "css:finder"],
+        ["xpath=//input[@value='tester']", "xpath:attributes"],
+        ["xpath=//div[@id='search-form']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "3d177028-54c3-45ee-9eca-701611738fd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.autocomplete-item__field:nth-child(1)",
+      "targets": [
+        ["css=.autocomplete-item__field:nth-child(1)", "css:finder"],
+        ["xpath=(//input[@value=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='search-form']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb1a8fac-b403-47d0-97ab-068a16759979",
+      "comment": "",
+      "command": "type",
+      "target": "css=.autocomplete-item__field:nth-child(1)",
+      "targets": [
+        ["css=.autocomplete-item__field:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='warszawa']", "xpath:attributes"],
+        ["xpath=//div[@id='search-form']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "warszawa"
+    }, {
+      "id": "ef381c62-40b9-49a8-a099-8519a088d41c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.autocomplete-item__field:nth-child(1)",
+      "targets": [
+        ["css=.autocomplete-item__field:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='warszawa']", "xpath:attributes"],
+        ["xpath=//div[@id='search-form']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "2ebebf7d-7dda-4620-99ad-75e54b08edbe",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.radius__trigger",
+      "targets": [
+        ["css=.radius__trigger", "css:finder"],
+        ["xpath=//input[@value='+ 30 km']", "xpath:attributes"],
+        ["xpath=//div[@id='search-form']/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ed89028-d57c-4a78-9dbb-6727c367650f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.radius__trigger",
+      "targets": [
+        ["css=.radius__trigger", "css:finder"],
+        ["xpath=//input[@value='+ 30 km']", "xpath:attributes"],
+        ["xpath=//div[@id='search-form']/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "663677e1-291b-40f1-8cc5-4d55b27cb8b8",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.radius__trigger",
+      "targets": [
+        ["css=.radius__trigger", "css:finder"],
+        ["xpath=//input[@value='+ 30 km']", "xpath:attributes"],
+        ["xpath=//div[@id='search-form']/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21ced5d8-9674-4323-9a1b-6a42aad69792",
+      "comment": "",
+      "command": "click",
+      "target": "css=.radius__options-list-item:nth-child(3)",
+      "targets": [
+        ["css=.radius__options-list-item:nth-child(3)", "css:finder"],
+        ["xpath=//li[@value='10']", "xpath:attributes"],
+        ["xpath=//div[@id='search-form']/div/div[3]/div/div/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'+ 10 km')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92d33a17-c573-4a9d-81aa-8d584dfbf3f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ripple:nth-child(3)",
+      "targets": [
+        ["css=.ripple:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='search-form']/div/div[4]/div/button/span[2]", "xpath:idRelative"],
+        ["xpath=//button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e0dca49-b910-4e9e-a4ed-20f5bed8e6f6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=div:nth-child(6) > .results-header",
+      "targets": [
+        ["css=div:nth-child(6) > .results-header", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div[6]/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div", "xpath:position"]
+      ],
+      "value": "Praca tester, Warszawa Mamy dla Ciebie 234 ofert"
+    }]
+  }],
+  "suites": [{
+    "id": "d73b9c5e-dbdb-4ec6-aa67-73d4e87f5b77",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6e95d932-1ce2-4b3f-bb45-9e4d98f23719"]
+  }],
+  "urls": ["https://www.pracuj.pl/"],
+  "plugins": []
+}
