@@ -1,5 +1,5 @@
 # Testy-Serwisu-Pracuj.pl
-> Testing the most important functionalities of the website
+> Automatic tests of the most important functionalities of the website
 
 ## Table of Contents
 * [Technologies Used](#technologies-used)
@@ -8,11 +8,12 @@
 ## Technologies Used
 - Cypress
 - JavaScript
+- Selenium IDE
 
 ## Features
 List the tested functionalities:
 - Logging
 - New user registration
-- search engine
+- Search engine
 
 
