@@ -15,5 +15,6 @@ List the tested functionalities:
 - Logging
 - New user registration
 - Search engine
-![Test cases map](.Przypadki testowe mapa pracuj.png)
+
+![Test cases map](./Przypadki testowe mapa pracuj.png)
 
