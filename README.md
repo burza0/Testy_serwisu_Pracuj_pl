@@ -16,5 +16,5 @@ List the tested functionalities:
 - New user registration
 - Search engine
 
-![Test cases map](./Przypadki testowe mapa pracuj.png)
+
 
