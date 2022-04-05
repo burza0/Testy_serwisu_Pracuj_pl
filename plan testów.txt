@@ -1,3 +1,0 @@
-W narzędziu Testlink sporządzić plan, rozpisać przypadki, napisać raport
-Wyszukiwarka, Logowanie, odzyskiwanie hasła (błąd)
-
