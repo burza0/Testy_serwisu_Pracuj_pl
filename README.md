@@ -16,6 +16,6 @@ List the tested functionalities:
 - New user registration
 - Search engine
 
-![Test cases](.)
+![Test cases](./Przypadki testowe -mapa.pdf)
 
 
