@@ -16,4 +16,4 @@ List the tested functionalities:
 - New user registration
 - Search engine
 
-![Przypadki testowe -mapa](https://drive.google.com/file/d/129dzi0QDhIIIuZRplsWsWz4xo7XJdV1A/view?usp=sharing)
+
