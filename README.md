@@ -16,6 +16,6 @@ List the tested functionalities:
 - New user registration
 - Search engine
 
-![Test cases] (./Testy_serwisu_Pracuj_pl/Przypadki testowe -mapa.pdf)
+![Test cases] (./Przypadki testowe -mapa.pdf)
 
 
